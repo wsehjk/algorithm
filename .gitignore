@@ -4,3 +4,6 @@
 .idea
 algs4.jar
 .clang-format
+*.bin
+bin/
+.cph

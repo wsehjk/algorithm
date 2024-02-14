@@ -20,7 +20,9 @@ class KMP {
     }
 
    public:
-    KMP(const std::string& pat) : pat_(pat), next_(pat.size(), 0) { GetNext(); }
+    KMP(const std::string& pat) : pat_(pat), next_(pat.size(), 0) {
+        GetNext();
+    }
     // 给定文本串，返回模式串在文本串中出现的位置
     std::vector<int> Search(const std::string& txt) {
         std::vector<int> pos;
