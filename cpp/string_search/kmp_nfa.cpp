@@ -39,7 +39,7 @@ class KMP {
             c += pat_[c] == txt[i];
             if (c == pat_.size()) {
                 pos.push_back(i - c + 1);
-                c = next[c-1];  // 回退到字符串的前后缀匹配的位置
+                c = next_[c-1];  // 回退到字符串的前后缀匹配的位置
             }
         }
         return pos;
